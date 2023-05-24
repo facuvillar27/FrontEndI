@@ -1,0 +1,164 @@
+.upperHeader {
+    background-color: #222222;
+    color: #F3F3F3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;    
+}
+
+.upperHeaderLeft {
+    margin-left: 90px;
+}
+
+.upperHeaderRight {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+.upperHeaderRight nav {
+    padding-left: 20px;
+}
+
+.lowerHeader {
+    background-color: #F0A83E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.lowerHeaderLeft {
+    margin-left: 50px;
+}
+
+.front {
+    color: #3C2313;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.catNDog {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.lowerHeaderRight {
+    margin-right: 40px;
+}
+
+.lowerHeaderRight ul{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.lowerHeaderRight li {
+    margin-left: 30px;
+}
+
+.upperMain {
+    background-image: url("../img/bowl-and-pet.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.upperMainText {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    padding-right: 25px;
+}
+
+.upperMainTextAlign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0px; */
+}
+
+.upperMainTextAlign h2 {
+    background-color: #ffffff;
+    height: 50px;
+    font-weight: 400;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.upperMainTextAlign p {
+    color: #3C2313;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.buttonComederos {
+    background-color: #F0A83E;
+    color: #ffffff;
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 0px;
+}
+
+.midMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.midMain h2 {
+    color: #3C2313;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.midMain ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.midMain ul li a {
+    color: #666666;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.midMain ul li {
+    list-style: none;
+}
