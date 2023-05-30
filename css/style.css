@@ -40,13 +40,13 @@
     margin-left: 50px;
 }
 
-.front {
+.frontHeader {
     color: #3C2313;
     font-size: 20px;
     font-weight: 700;
 }
 
-.catNDog {
+.catNDogHeader {
     color: #ffffff;
     font-size: 20px;
     font-weight: 700;
@@ -148,6 +148,7 @@
 .midMain ul {
     display: flex;
     flex-direction: row;
+    padding: 0px;
 }
 
 .midMain ul li a {
@@ -161,4 +162,212 @@
 
 .midMain ul li {
     list-style: none;
+}
+
+.lowMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 95px 80px 95px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lowMain article {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBFAF6 !important;
+    width: 265px;
+    height: 312px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.lowMain article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #FBFAF6;
+    margin: 0px;
+    padding: 0px 0px 8px 0px;
+}
+
+.lowMain article div p {
+    color: #3C2313;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0px;
+}
+
+.lowMain article div span {
+    color: #F0A83E; 
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0px;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto h1 {
+    color: #3C2313;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.encuesta input {
+    color: white;
+    font-size: 9px;
+    font-family: 'Roboto', sans-serif;
+    width: 340px;
+    height: 40px;
+    background-color: #3C2313;
+    border-radius: 15px;
+    border-width: 0px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.botones {
+    display: flex;
+    margin: 35px;
+}
+
+.botones button {
+    margin: 5px;
+    width: 110px;
+    height: 34px;
+    border-radius: 15px;
+    border-width: 0px;
+}
+
+.resetear {
+    background-color: #8A8787;
+}
+
+.enviar {
+    background-color: #F0A83E;
+}
+
+.upperFooter {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #F0A83E;
+    align-items: center;
+}
+
+.upperFooterLeft {
+    display: flex;
+    margin-left: 28px;
+}
+
+.upperFooterLeft h2 {
+    padding-left: 10px;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.upperFooter div input {
+    width: 270px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    border: 0px;
+    color: #a0a0a0;
+    padding-left: 10px;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.upperFooter div {
+    font-family: 'Roboto', sans-serif;
+}
+
+.upperFooter div button {
+    height: 34px;
+    width: 70px;
+    border-radius: 15px;
+    background-color: #3C2313;
+    color: white;
+    font-weight: 700;
+    font-size: 9px;
+    margin: 0px 47px 0px 5px;
+    border-width: 0px;
+}
+
+.downFooter {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3C2313;
+    font-family: 'Roboto', sans-serif
+}
+
+.downFooterLeftText {
+    display: flex;
+    padding: 25px 0px 30px 74px;
+}
+
+.downFooterLeft div h2, p {
+    color: white;
+}
+
+.downFooterLeftText div {
+    padding-left: 30px;
+}
+
+.downFooterLeftText div h2 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0px;
+    margin: 0px;
+}
+
+.downFooterLeftText div p {
+    font-size: 10px;
+    font-weight: 700px;
+    color: #8A8787;
+    padding: 0px;
+    margin: 0px;
+}
+
+.downFooterRight {
+    display: flex;
+    padding-right: 74px;
+    align-items: center;
+}
+
+.frontFooter {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.catNDogFooter {
+    color: #F0A83E;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footerOfFooter {
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    align-items: center;
+}
+
+.footerOfFooter p {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 10px
 }
