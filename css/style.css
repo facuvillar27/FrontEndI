@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 .upperHeader {
     background-color: #222222;
     color: #F3F3F3;
@@ -8,7 +13,7 @@
     height: 20px;
     font-size: 10px;
     font-weight: 400;
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Roboto', sans-serif;
 }
 
 .upperHeaderLeft {
@@ -53,10 +58,15 @@
 }
 
 .lowerHeaderRight {
+    display: flex;
     margin-right: 40px;
 }
 
-.lowerHeaderRight ul{
+.menu {
+    display: flex;
+}
+
+.menu-item {
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
@@ -66,7 +76,15 @@
     list-style: none;
 }
 
-.lowerHeaderRight li {
+.menu-icon {
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-item-content {
     margin-left: 30px;
 }
 
@@ -143,6 +161,7 @@
     color: #3C2313;
     font-size: 50px;
     font-weight: 900;
+    text-align: center;
 }
 
 .midMain ul {
@@ -167,18 +186,17 @@
 .lowMain {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin: 50px 95px 80px 95px;
+    margin: 50px 20px 40px 20px;
     font-family: 'Roboto', sans-serif;
 }
 
 .lowMain article {
     display: flex;
     flex-direction: column;
-    background-color: #FBFAF6 !important;
-    width: 265px;
-    height: 312px;
+    background-color: #FBFAF6;
     box-sizing: border-box;
     align-items: center;
 }
@@ -201,7 +219,7 @@
 }
 
 .lowMain article div span {
-    color: #F0A83E; 
+    color: #F0A83E;
     font-weight: 500;
     font-size: 15px;
     margin: 0px;
@@ -240,6 +258,7 @@
 }
 
 .botones button {
+    color: #FFFFFF;
     margin: 5px;
     width: 110px;
     height: 34px;
@@ -258,7 +277,7 @@
 .upperFooter {
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    padding: 10px 0px;
     background-color: #F0A83E;
     align-items: center;
 }
@@ -266,6 +285,7 @@
 .upperFooterLeft {
     display: flex;
     margin-left: 28px;
+    align-items: center;
 }
 
 .upperFooterLeft h2 {
@@ -316,7 +336,8 @@
     padding: 25px 0px 30px 74px;
 }
 
-.downFooterLeft div h2, p {
+.downFooterLeft div h2,
+p {
     color: white;
 }
 
@@ -370,4 +391,71 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 10px
+}
+
+@media (max-width: 480px) {
+
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+      }
+    
+    #menu-toggle {
+        display: none;
+      }
+    
+    #menu-toggle:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lowMain article {
+        margin: 10px 0px;
+    }
+
+    .lowMain {
+        margin: 10px;
+    }
+
+    #contacto h1 {
+        font-size: 48px;
+    }
+
+    .botones button {
+        width: 190px;
+    }
+
+    .upperFooter {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .upperFooterLeft {
+        margin-left: 5px;
+    }
+
+    .upperFooterRight {
+        align-self: center;
+    }
+
+    .downFooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .downFooterLeft {
+        order: 2;
+    }
+
+    .downFooterRight {
+        order: 1;
+        padding: 10px 0px 0px 0px;
+        transform: scale(0.8);
+
+    }
 }
